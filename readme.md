@@ -3,7 +3,7 @@
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="speclogo.png">
     <source media="(prefers-color-scheme: light)" srcset="speclogo.png">
-    <img src="speclogo.png" alt="Logo" width="300">
+    <img src="speclogo.png" alt="Logo" width="500">
   </picture>
 </p>
 
@@ -34,7 +34,7 @@ That made me think:
 
 Instead of creating a normal reminder application, I wanted to build something smarter — an AI assistant that could actually verify whether I was wearing my glasses or not.
 
-That idea eventually became SpecBot.
+That idea eventually became SpecBoot.
 
 ---
 
@@ -60,7 +60,7 @@ That idea eventually became SpecBot.
 ```plaintext
 Laptop Starts
     ↓
-SpecBot Launches Automatically
+SpecBoot Launches Automatically
     ↓
 Webcam Opens
     ↓
@@ -120,7 +120,7 @@ SpecBot/
 ## Clone Repository
 
 ```bash
-git clone <repository-link>
+git clone https://github.com/harikrishnan669/SpecBoot.git
 ```
 
 ---
