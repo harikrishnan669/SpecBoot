@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpecBoot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <div class="top-section">
+            <div class="logo-circle">
+                <img src="icon.png" alt="SpecBot Logo">
+            </div>
+            <h1>SpecBoot</h1>
+            <p class="subtitle">
+                Specs Detection System
+            </p>
+        </div>
+        <div class="video-container">
+            <video
+                    id="webcam"
+                    autoplay
+                    playsinline
+            ></video>
+            <div class="camera-overlay"></div>
+        </div>
+        <div class="status-box">
+            <h2 id="status">
+                Checking for Specs...
+            </h2>
+        </div>
+        <div class="button-group">
+            <button class="cancel-btn"
+                    onclick="cancelProcess()">
+                Cancel Process
+            </button>
+        </div>
+    </div>
+</div>
+<script src="renderer.js"></script>
+</body>
+</html>
