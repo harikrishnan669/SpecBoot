@@ -10,7 +10,7 @@
 
 # SpecBoot — AI Powered Eye Protection Assistant
 
-SpecBoot is an AI-powered desktop assistant designed to remind users to wear UV/protective glasses while using their laptop.
+SpecBoot is an AI-powered desktop assistant designed to remind users to wear spec/glasses while using their laptop.
 
 The application automatically starts when the system turns on or wakes from sleep, temporarily accesses the webcam, detects whether the user is wearing glasses using AI, and alerts the user if glasses are not detected.
 
