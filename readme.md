@@ -14,6 +14,8 @@ The application automatically starts when the system turns on or wakes from slee
 
 Once the glasses are detected, the alarm stops automatically and the camera closes.
 
+Just a reminder to wear the specs....
+
 ---
 
 # Inspiration

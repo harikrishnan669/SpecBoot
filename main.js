@@ -5,48 +5,33 @@ app.setLoginItemSettings({
     path: process.execPath
 });
 const gotTheLock = app.requestSingleInstanceLock();
-
 if (!gotTheLock) {
-
     app.quit();
-
 } else {
-
     app.on('second-instance', () => {
-
         if (win) {
-
             if (win.isMinimized()) {
                 win.restore();
             }
-
             win.show();
             win.focus();
         }
     });
 }
 function createWindow() {
-
     win = new BrowserWindow({
-
         width: 460,
         height: 760,
-
         resizable: false,
         maximizable: false,
-
         show: true,
-
         autoHideMenuBar: true,
-
         backgroundColor: '#0f0f0f',
-
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false
         }
     });
-
     win.loadFile('index.html');
     win.once('ready-to-show', () => {
         win.show();
@@ -76,16 +61,13 @@ function createTray() {
         {
             label: 'Quit',
             click: () => {
-
                 app.isQuiting = true;
-
                 app.quit();
             }
         },
         {
             label: 'Cancel Process',
             click: () => {
-
                 win.webContents.executeJavaScript(`
             if(window.cancelProcess){
                 window.cancelProcess();
@@ -102,7 +84,6 @@ function createTray() {
 }
 
 function showNotification() {
-
     new Notification({
         title: 'Spec Reminder',
         body: 'AI Eye Protection started successfully.'
@@ -125,7 +106,6 @@ app.whenReady().then(() => {
             new Notification({
                 title: 'Spec Reminder',
                 body: 'Please wear your protective glasses.'
-
             }).show();
         }
     });
@@ -141,11 +121,8 @@ app.whenReady().then(() => {
 app.on('window-all-closed', (e) => {
     e.preventDefault();
 });
-
 app.on('activate', () => {
-
     if (BrowserWindow.getAllWindows().length === 0) {
-
         createWindow();
     }
 });
