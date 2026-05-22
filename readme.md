@@ -144,4 +144,4 @@ npm start
 ```bash
 npm run build
 ```
-Reminder: Disable the electron.exe build in the Task manager to avoid the pop up window of the electron and direct opening of the SpecBoot application.
+### Reminder: Disable the electron.exe build in the Task manager to avoid the pop up window of the electron and direct opening of the SpecBoot application.
