@@ -4,7 +4,27 @@ app.setLoginItemSettings({
     openAtLogin: true,
     path: process.execPath
 });
+const gotTheLock = app.requestSingleInstanceLock();
 
+if (!gotTheLock) {
+
+    app.quit();
+
+} else {
+
+    app.on('second-instance', () => {
+
+        if (win) {
+
+            if (win.isMinimized()) {
+                win.restore();
+            }
+
+            win.show();
+            win.focus();
+        }
+    });
+}
 function createWindow() {
 
     win = new BrowserWindow({
@@ -91,7 +111,7 @@ function showNotification() {
 app.whenReady().then(() => {
     app.setLoginItemSettings({
         openAtLogin: true,
-        openAsHidden: false,
+        openAsHidden: false
     });
     createWindow();
     createTray();

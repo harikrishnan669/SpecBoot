@@ -45,7 +45,7 @@ async function predict(video) {
             );
             if (
                 prediction[i].className === "Wearing Specs" &&
-                prediction[i].probability > 0.70
+                prediction[i].probability > 0.95
             ) {
                 wearingSpecs = true;
             }
