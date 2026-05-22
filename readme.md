@@ -1,8 +1,6 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="speclogo.png">
-    <source media="(prefers-color-scheme: light)" srcset="speclogo.png">
     <img src="speclogo.png" alt="Logo" width="600">
   </picture>
 </p>
@@ -146,5 +144,4 @@ npm start
 ```bash
 npm run build
 ```
-
----
+Reminder: Disable the electron.exe build in the Task manager to avoid the pop up window of the electron and direct opening of the SpecBoot application.
