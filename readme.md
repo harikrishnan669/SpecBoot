@@ -5,7 +5,6 @@
   </picture>
 </p>
 
-
 # SpecBoot — AI Powered Eye Protection Assistant
 
 SpecBoot is an AI-powered desktop assistant designed to remind users to wear spec/glasses while using their laptop.
@@ -15,6 +14,8 @@ The application automatically starts when the system turns on or wakes from slee
 Once the glasses are detected, the alarm stops automatically and the camera closes.
 
 Just a reminder to wear the specs....
+
+
 
 ---
 
@@ -146,4 +147,7 @@ npm start
 ```bash
 npm run build
 ```
+
+### After running the build command, the executable file will be generated in the `dist` folder. You can run the executable to start using SpecBoot.
+
 ### Reminder: Disable the electron.exe build in the Task manager to avoid the pop up window of the electron and direct opening of the SpecBoot application.
